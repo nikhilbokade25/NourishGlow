@@ -1,0 +1,124 @@
+/* Navbar.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.logo {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav {
+    text-align: center;
+    flex-grow: 5;
+    overflow: hidden;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.nav li {
+    padding: 10px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.nav li:hover {
+    background-color: rebeccapurple;
+}
+
+.cart-icon {
+    flex: 1;
+    text-align: right;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav_btn {
+    display: none;
+    opacity: 0;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_btn_menu {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100vw);
+        background-color: white;
+        z-index: 1;
+    }
+
+    .nav_btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    .menu-cart-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .responsive_nav {
+        transition: 0.5s;
+        transform: none;
+    }
+
+    .nav_btn_close {
+        position: absolute;
+        top: 12px;
+        right: 0px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav a {
+        margin-top: 40px;
+    }
+}
