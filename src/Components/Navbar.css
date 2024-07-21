@@ -6,6 +6,11 @@
     padding: 3px 20px;
     background-color: #f8f9fa;
     overflow: hidden;
+    font-family: "Jost", sans-serif;
+}
+
+.header h3{
+    font-size: 25px;
 }
 
 .logo {
@@ -37,6 +42,7 @@
 
 .nav a {
     text-decoration: none;
+    font-size: 20px;
     color: #333;
     font-weight: bold;
     display: block;
